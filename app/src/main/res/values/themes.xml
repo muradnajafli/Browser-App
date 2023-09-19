@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BrowserApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+
+    </style>
+
+    <style name="Theme.BrowserApp" parent="Base.Theme.BrowserApp" />
+</resources>
