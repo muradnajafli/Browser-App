@@ -1,6 +1,5 @@
 package com.example.browserapp
 
-import android.graphics.Color
 
 const val COLOR_GREEN = "#008000"
 const val COLOR_BLUE = "#0000FF"
