@@ -34,8 +34,10 @@ class MainActivity : AppCompatActivity() {
             settings.javaScriptEnabled = true
             webChromeClient = object : WebChromeClient() {
                 override fun onReceivedTitle(view: WebView?, title: String?) {
-                    title?.let {
-                        binding.toolbar.title = it
+                    if (title.isNullOrEmpty() || title == "about:blank") {
+                        binding.toolbar.title = resources.getString(R.string.app_name)
+                    } else {
+                        binding.toolbar.title = title
                     }
                 }
             }
